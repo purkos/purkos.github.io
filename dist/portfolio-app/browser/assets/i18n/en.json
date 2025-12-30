@@ -1,0 +1,127 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "Software Solutions",
+    "subtitle": "for Modern Business",
+    "description": "We specialize in creating advanced 3D configurators and business management systems",
+    "cta": {
+      "projects": "View Projects",
+      "contact": "Get in Touch"
+    },
+    "skills": {
+      "title": "Our Expertise",
+      "3d": {
+        "name": "3D Configurators",
+        "description": "Interactive 3D product configuration tools"
+      },
+      "crm": {
+        "name": "CRM Systems",
+        "description": "Customer relationship management solutions"
+      },
+      "webdev": {
+        "name": "Web Development",
+        "description": "Modern web applications and platforms"
+      },
+      "consulting": {
+        "name": "IT Consulting",
+        "description": "Technology consulting and integration"
+      }
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "company": "Software Development Company",
+    "description1": "We are a team of experienced developers specializing in creating innovative software solutions for businesses.",
+    "description2": "Our approach focuses on understanding client needs and delivering high-quality, scalable applications that drive business growth.",
+    "description3": "We combine cutting-edge technology with proven development practices to create solutions that exceed expectations.",
+    "stats": {
+      "projects": {
+        "value": "10+",
+        "label": "Completed Projects"
+      },
+      "clients": {
+        "value": "15+",
+        "label": "Satisfied Clients"
+      },
+      "years": {
+        "value": "5+",
+        "label": "Years of Experience"
+      },
+      "team": {
+        "value": "8+",
+        "label": "Team Members"
+      }
+    },
+    "experience": {
+      "title": "Experience"
+    },
+    "education": {
+      "title": "Certifications"
+    }
+  },
+  "projects": {
+    "title": "Our Projects",
+    "subtitle": "Explore our portfolio of innovative software solutions",
+    "filters": {
+      "all": "All",
+      "configurators": "3D Configurators",
+      "crm": "CRM Systems",
+      "web": "Web Applications"
+    },
+    "garage": {
+      "title": "3D Garage Configurator",
+      "description": "Advanced 3D configurator for designing custom garages with real-time visualization and pricing",
+      "details": "View Details",
+      "demo": "Live Demo",
+      "github": "GitHub"
+    },
+    "pergola": {
+      "title": "3D Pergola Configurator",
+      "description": "Interactive pergola design tool with integrated CRM system for customer management",
+      "details": "View Details",
+      "demo": "Live Demo",
+      "github": "GitHub"
+    }
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "Have a project in mind? Let's discuss how we can help",
+    "info": {
+      "title": "Contact Information",
+      "description": "We're open to new projects and collaborations. Feel free to reach out to discuss your requirements.",
+      "email": {
+        "title": "Email",
+        "value": "contact@company.com"
+      },
+      "phone": {
+        "title": "Phone",
+        "value": "+48 123 456 789"
+      },
+      "location": {
+        "title": "Location",
+        "value": "Warsaw, Poland"
+      }
+    },
+    "form": {
+      "name": "Full Name",
+      "email": "Email Address",
+      "subject": "Subject",
+      "message": "Message",
+      "send": "Send Message",
+      "success": "✓ Thank you! We'll get back to you soon.",
+      "errors": {
+        "name": "Name is required",
+        "email": "Valid email is required",
+        "message": "Message is required"
+      }
+    },
+    "social": {
+      "title": "Social Media"
+    }
+  }
+}
