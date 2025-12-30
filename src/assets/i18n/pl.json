@@ -1,0 +1,127 @@
+{
+  "nav": {
+    "home": "Strona główna",
+    "about": "O nas",
+    "projects": "Projekty",
+    "contact": "Kontakt"
+  },
+  "home": {
+    "title": "Rozwiązania Software",
+    "subtitle": "dla Nowoczesnego Biznesu",
+    "description": "Specjalizujemy się w tworzeniu zaawansowanych konfiguratorów 3D i systemów zarządzania",
+    "cta": {
+      "projects": "Zobacz Projekty",
+      "contact": "Skontaktuj się"
+    },
+    "skills": {
+      "title": "Nasza Specjalizacja",
+      "3d": {
+        "name": "Konfiguratory 3D",
+        "description": "Interaktywne narzędzia do konfiguracji produktów w 3D"
+      },
+      "crm": {
+        "name": "Systemy CRM",
+        "description": "Rozwiązania do zarządzania relacjami z klientami"
+      },
+      "webdev": {
+        "name": "Tworzenie Stron WWW",
+        "description": "Nowoczesne aplikacje i platformy webowe"
+      },
+      "consulting": {
+        "name": "Doradztwo IT",
+        "description": "Konsultacje technologiczne i integracja systemów"
+      }
+    }
+  },
+  "about": {
+    "title": "O Nas",
+    "company": "Firma Software'owa",
+    "description1": "Jesteśmy zespołem doświadczonych programistów specjalizujących się w tworzeniu innowacyjnych rozwiązań dla biznesu.",
+    "description2": "Nasze podejście skupia się na zrozumieniu potrzeb klienta i dostarczaniu wysokiej jakości, skalowalnych aplikacji wspierających rozwój biznesu.",
+    "description3": "Łączymy najnowsze technologie z sprawdzonymi praktykami developmentu, tworząc rozwiązania przekraczające oczekiwania.",
+    "stats": {
+      "projects": {
+        "value": "10+",
+        "label": "Zrealizowanych Projektów"
+      },
+      "clients": {
+        "value": "15+",
+        "label": "Zadowolonych Klientów"
+      },
+      "years": {
+        "value": "5+",
+        "label": "Lat Doświadczenia"
+      },
+      "team": {
+        "value": "8+",
+        "label": "Członków Zespołu"
+      }
+    },
+    "experience": {
+      "title": "Doświadczenie"
+    },
+    "education": {
+      "title": "Certyfikaty"
+    }
+  },
+  "projects": {
+    "title": "Nasze Projekty",
+    "subtitle": "Poznaj nasze portfolio innowacyjnych rozwiązań software'owych",
+    "filters": {
+      "all": "Wszystkie",
+      "configurators": "Konfiguratory 3D",
+      "crm": "Systemy CRM",
+      "web": "Aplikacje Webowe"
+    },
+    "garage": {
+      "title": "Konfigurator Garaży 3D",
+      "description": "Zaawansowany konfigurator 3D do projektowania garaży z wizualizacją w czasie rzeczywistym i wyceną",
+      "details": "Zobacz Szczegóły",
+      "demo": "Demo na Żywo",
+      "github": "GitHub"
+    },
+    "pergola": {
+      "title": "Konfigurator Pergoli 3D",
+      "description": "Interaktywne narzędzie do projektowania pergoli ze zintegrowanym systemem CRM do zarządzania klientami",
+      "details": "Zobacz Szczegóły",
+      "demo": "Demo na Żywo",
+      "github": "GitHub"
+    }
+  },
+  "contact": {
+    "title": "Skontaktuj się z nami",
+    "subtitle": "Masz projekt w planach? Porozmawiajmy o tym, jak możemy pomóc",
+    "info": {
+      "title": "Informacje Kontaktowe",
+      "description": "Jesteśmy otwarci na nowe projekty i współpracę. Skontaktuj się z nami, aby omówić wymagania.",
+      "email": {
+        "title": "Email",
+        "value": "kontakt@firma.pl"
+      },
+      "phone": {
+        "title": "Telefon",
+        "value": "+48 123 456 789"
+      },
+      "location": {
+        "title": "Lokalizacja",
+        "value": "Warszawa, Polska"
+      }
+    },
+    "form": {
+      "name": "Imię i nazwisko",
+      "email": "Adres email",
+      "subject": "Temat",
+      "message": "Wiadomość",
+      "send": "Wyślij wiadomość",
+      "success": "✓ Dziękujemy! Odezwiemy się wkrótce.",
+      "errors": {
+        "name": "Imię jest wymagane",
+        "email": "Poprawny email jest wymagany",
+        "message": "Wiadomość jest wymagana"
+      }
+    },
+    "social": {
+      "title": "Media Społecznościowe"
+    }
+  }
+}

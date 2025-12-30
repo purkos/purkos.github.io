@@ -1,0 +1,38 @@
+<div class="home-container" @fadeIn>
+  <div class="hero-section">
+    <div class="hero-content" @slideInLeft>
+      <h1 class="hero-title">
+        <span class="gradient-text">{{ 'home.title' | translate }}</span>
+      </h1>
+      <h2 class="hero-subtitle-large">{{ 'home.subtitle' | translate }}</h2>
+      <p class="hero-description">
+        {{ 'home.description' | translate }}
+      </p>
+      <div class="cta-buttons">
+        <a href="#projects" (click)="scrollToSection($event, 'projects')" class="btn btn-primary">{{ 'home.cta.projects' | translate }}</a>
+        <a href="#contact" (click)="scrollToSection($event, 'contact')" class="btn btn-secondary">{{ 'home.cta.contact' | translate }}</a>
+      </div>
+    </div>
+    <div class="hero-image" @slideInRight>
+      <div class="image-placeholder">
+        <div class="code-animation">
+          <div class="code-line"></div>
+          <div class="code-line"></div>
+          <div class="code-line"></div>
+          <div class="code-line"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="skills-section">
+    <h2 class="section-title">{{ 'home.skills.title' | translate }}</h2>
+    <div class="skills-grid">
+      <div class="skill-card" *ngFor="let skill of skills" @fadeInUp>
+        <div class="skill-icon">{{ skill.icon }}</div>
+        <h3>{{ skill.name | translate }}</h3>
+        <p>{{ skill.description | translate }}</p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,48 @@
+<div class="about-container" @fadeIn>
+  <div class="about-content">
+    <h1 class="page-title" @slideInDown>{{ 'about.title' | translate }}</h1>
+
+    <div class="about-grid">
+      <div class="about-text" @slideInLeft>
+        <h2>{{ 'about.company' | translate }}</h2>
+        <p>{{ 'about.description1' | translate }}</p>
+        <p>{{ 'about.description2' | translate }}</p>
+        <p>{{ 'about.description3' | translate }}</p>
+      </div>
+
+      <div class="stats-grid" @slideInRight>
+        <div class="stat-card">
+          <h3>{{ 'about.stats.projects.value' | translate }}</h3>
+          <p>{{ 'about.stats.projects.label' | translate }}</p>
+        </div>
+        <div class="stat-card">
+          <h3>{{ 'about.stats.clients.value' | translate }}</h3>
+          <p>{{ 'about.stats.clients.label' | translate }}</p>
+        </div>
+        <div class="stat-card">
+          <h3>{{ 'about.stats.years.value' | translate }}</h3>
+          <p>{{ 'about.stats.years.label' | translate }}</p>
+        </div>
+        <div class="stat-card">
+          <h3>{{ 'about.stats.team.value' | translate }}</h3>
+          <p>{{ 'about.stats.team.label' | translate }}</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="experience-section">
+      <h2 class="section-title">{{ 'about.experience.title' | translate }}</h2>
+      <div class="timeline">
+        <div class="timeline-item" *ngFor="let exp of experience" @fadeInUp>
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>{{ exp.position }}</h3>
+            <h4>{{ exp.company }}</h4>
+            <p class="timeline-period">{{ exp.period }}</p>
+            <p>{{ exp.description }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

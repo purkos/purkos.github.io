@@ -1,0 +1,107 @@
+<div class="contact-container" @fadeIn>
+  <div class="contact-content">
+    <h1 class="page-title" @slideInDown>{{ 'contact.title' | translate }}</h1>
+    <p class="page-subtitle">{{ 'contact.subtitle' | translate }}</p>
+
+    <div class="contact-grid">
+      <div class="contact-info" @slideInLeft>
+        <h2>{{ 'contact.info.title' | translate }}</h2>
+        <p class="intro-text">{{ 'contact.info.description' | translate }}</p>
+
+        <div class="contact-methods">
+          <div class="contact-method">
+            <div class="method-icon">📧</div>
+            <div class="method-info">
+              <h3>{{ 'contact.info.email.title' | translate }}</h3>
+              <p>{{ 'contact.info.email.value' | translate }}</p>
+            </div>
+          </div>
+          <div class="contact-method">
+            <div class="method-icon">📱</div>
+            <div class="method-info">
+              <h3>{{ 'contact.info.phone.title' | translate }}</h3>
+              <p>{{ 'contact.info.phone.value' | translate }}</p>
+            </div>
+          </div>
+          <div class="contact-method">
+            <div class="method-icon">📍</div>
+            <div class="method-info">
+              <h3>{{ 'contact.info.location.title' | translate }}</h3>
+              <p>{{ 'contact.info.location.value' | translate }}</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="social-links">
+          <h3>{{ 'contact.social.title' | translate }}</h3>
+          <div class="social-icons">
+            <a href="#" class="social-icon" *ngFor="let social of socialLinks">
+              {{ social.icon }}
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form" @slideInRight>
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+          <div class="form-group">
+            <label for="name">{{ 'contact.form.name' | translate }}</label>
+            <input
+              type="text"
+              id="name"
+              formControlName="name"
+              [placeholder]="'contact.form.name' | translate"
+            />
+            <span class="error" *ngIf="contactForm.get('name')?.invalid && contactForm.get('name')?.touched">
+              {{ 'contact.form.errors.name' | translate }}
+            </span>
+          </div>
+
+          <div class="form-group">
+            <label for="email">{{ 'contact.form.email' | translate }}</label>
+            <input
+              type="email"
+              id="email"
+              formControlName="email"
+              [placeholder]="'contact.form.email' | translate"
+            />
+            <span class="error" *ngIf="contactForm.get('email')?.invalid && contactForm.get('email')?.touched">
+              {{ 'contact.form.errors.email' | translate }}
+            </span>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">{{ 'contact.form.subject' | translate }}</label>
+            <input
+              type="text"
+              id="subject"
+              formControlName="subject"
+              [placeholder]="'contact.form.subject' | translate"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="message">{{ 'contact.form.message' | translate }}</label>
+            <textarea
+              id="message"
+              formControlName="message"
+              rows="5"
+              [placeholder]="'contact.form.message' | translate"
+            ></textarea>
+            <span class="error" *ngIf="contactForm.get('message')?.invalid && contactForm.get('message')?.touched">
+              {{ 'contact.form.errors.message' | translate }}
+            </span>
+          </div>
+
+          <button type="submit" class="submit-btn" [disabled]="contactForm.invalid">
+            {{ 'contact.form.send' | translate }}
+          </button>
+        </form>
+
+        <div class="success-message" *ngIf="formSubmitted">
+          <p>{{ 'contact.form.success' | translate }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

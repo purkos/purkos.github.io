@@ -1,0 +1,31 @@
+<nav class="navbar" [class.scrolled]="isScrolled">
+  <div class="nav-container">
+    <a href="#home" (click)="scrollToSection($event, 'home')" class="logo">DevStudio</a>
+    <div class="nav-right">
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="#home" (click)="scrollToSection($event, 'home')" [class.active]="activeSection === 'home'" class="nav-link">{{ 'nav.home' | translate }}</a>
+        </li>
+        <li class="nav-item">
+          <a href="#about" (click)="scrollToSection($event, 'about')" [class.active]="activeSection === 'about'" class="nav-link">{{ 'nav.about' | translate }}</a>
+        </li>
+        <li class="nav-item">
+          <a href="#projects" (click)="scrollToSection($event, 'projects')" [class.active]="activeSection === 'projects'" class="nav-link">{{ 'nav.projects' | translate }}</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact" (click)="scrollToSection($event, 'contact')" [class.active]="activeSection === 'contact'" class="nav-link">{{ 'nav.contact' | translate }}</a>
+        </li>
+      </ul>
+      <div class="nav-controls">
+        <button (click)="toggleTheme()" class="theme-toggle" [attr.aria-label]="'Toggle theme'">
+          <span *ngIf="themeService.isDark()">☀️</span>
+          <span *ngIf="!themeService.isDark()">🌙</span>
+        </button>
+        <div class="lang-switcher">
+          <button (click)="switchLanguage('en')" [class.active]="translate.currentLang === 'en'" class="lang-btn">EN</button>
+          <button (click)="switchLanguage('pl')" [class.active]="translate.currentLang === 'pl'" class="lang-btn">PL</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>

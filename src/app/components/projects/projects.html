@@ -1,0 +1,38 @@
+<div class="projects-container" @fadeIn>
+  <div class="projects-content">
+    <h1 class="page-title" @slideInDown>{{ 'projects.title' | translate }}</h1>
+    <p class="page-subtitle">{{ 'projects.subtitle' | translate }}</p>
+
+    <div class="filter-buttons">
+      <button
+        *ngFor="let filter of filters"
+        [class.active]="selectedFilter === filter.key"
+        (click)="selectFilter(filter.key)"
+        class="filter-btn"
+      >
+        {{ filter.label | translate }}
+      </button>
+    </div>
+
+    <div class="projects-grid">
+      <div class="project-card" *ngFor="let project of filteredProjects()" @fadeInUp>
+        <div class="project-image" [style.background-image]="'url(' + project.image + ')'">
+          <div class="project-overlay">
+            <span class="view-details">{{ 'projects.' + project.id + '.details' | translate }}</span>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>{{ 'projects.' + project.id + '.title' | translate }}</h3>
+          <p>{{ 'projects.' + project.id + '.description' | translate }}</p>
+          <div class="project-tags">
+            <span class="tag" *ngFor="let tech of project.technologies">{{ tech }}</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link">{{ 'projects.' + project.id + '.demo' | translate }}</a>
+            <a href="#" class="project-link">{{ 'projects.' + project.id + '.github' | translate }}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
