@@ -12,6 +12,7 @@ import { CommonModule } from '@angular/common';
 export class NavigationComponent implements OnInit {
   activeSection = 'home';
   isScrolled = false;
+  isMobileMenuOpen = false;
 
   constructor(
     public translate: TranslateService,
@@ -20,6 +21,10 @@ export class NavigationComponent implements OnInit {
 
   ngOnInit() {
     this.updateActiveSection();
+  }
+
+  toggleMobileMenu() {
+    this.isMobileMenuOpen = !this.isMobileMenuOpen;
   }
 
   switchLanguage(lang: string) {

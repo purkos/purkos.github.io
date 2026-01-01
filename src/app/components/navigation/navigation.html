@@ -1,19 +1,28 @@
 <nav class="navbar" [class.scrolled]="isScrolled">
   <div class="nav-container">
     <a href="#home" (click)="scrollToSection($event, 'home')" class="logo">DevStudio</a>
-    <div class="nav-right">
+
+    <button class="mobile-menu-toggle" (click)="toggleMobileMenu()" [attr.aria-label]="'Toggle menu'">
+      <span class="hamburger" [class.open]="isMobileMenuOpen">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </button>
+
+    <div class="nav-right" [class.mobile-open]="isMobileMenuOpen">
       <ul class="nav-menu">
         <li class="nav-item">
-          <a href="#home" (click)="scrollToSection($event, 'home')" [class.active]="activeSection === 'home'" class="nav-link">{{ 'nav.home' | translate }}</a>
+          <a href="#home" (click)="scrollToSection($event, 'home'); toggleMobileMenu()" [class.active]="activeSection === 'home'" class="nav-link">{{ 'nav.home' | translate }}</a>
         </li>
         <li class="nav-item">
-          <a href="#about" (click)="scrollToSection($event, 'about')" [class.active]="activeSection === 'about'" class="nav-link">{{ 'nav.about' | translate }}</a>
+          <a href="#about" (click)="scrollToSection($event, 'about'); toggleMobileMenu()" [class.active]="activeSection === 'about'" class="nav-link">{{ 'nav.about' | translate }}</a>
         </li>
         <li class="nav-item">
-          <a href="#projects" (click)="scrollToSection($event, 'projects')" [class.active]="activeSection === 'projects'" class="nav-link">{{ 'nav.projects' | translate }}</a>
+          <a href="#projects" (click)="scrollToSection($event, 'projects'); toggleMobileMenu()" [class.active]="activeSection === 'projects'" class="nav-link">{{ 'nav.projects' | translate }}</a>
         </li>
         <li class="nav-item">
-          <a href="#contact" (click)="scrollToSection($event, 'contact')" [class.active]="activeSection === 'contact'" class="nav-link">{{ 'nav.contact' | translate }}</a>
+          <a href="#contact" (click)="scrollToSection($event, 'contact'); toggleMobileMenu()" [class.active]="activeSection === 'contact'" class="nav-link">{{ 'nav.contact' | translate }}</a>
         </li>
       </ul>
       <div class="nav-controls">

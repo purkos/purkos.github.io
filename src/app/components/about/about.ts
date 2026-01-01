@@ -57,15 +57,9 @@ export class AboutComponent {
       description: 'Rozwój zaawansowanych aplikacji webowych w Angular. Mentoring juniorów, code review, optymalizacja wydajności.'
     },
     {
-      position: 'Full Stack Developer',
-      company: 'Digital Agency',
-      period: '2020 - 2022',
-      description: 'Tworzenie kompletnych rozwiązań webowych. Praca z Angular, Node.js, MongoDB.'
-    },
-    {
       position: 'Frontend Developer',
       company: 'Startup Tech',
-      period: '2019 - 2020',
+      period: '2019 - 2022',
       description: 'Rozwój interfejsów użytkownika. Implementacja responsywnych layoutów i animacji.'
     }
   ];
